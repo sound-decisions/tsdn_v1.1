@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="tsdn_v1.1">
+    <serverData>
+      <paths name="tsdn_v1.1">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="DEVELOPMENT/THE_SOUND_DECISIONS_NETWORK/tsdn_v1.1" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
+

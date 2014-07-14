@@ -1,0 +1,150 @@
+/*!
+ * Yamm!3
+ * Yet another megamenu for Bootstrap 3
+ * 
+ * http://geedmo.github.com/yamm3
+ */
+.yamm .nav,
+.yamm .collapse,
+.yamm .dropup,
+.yamm .dropdown {
+  position: static;
+}
+.yamm .container {
+  position: relative;
+}
+.yamm .dropdown-menu {
+  left: auto;
+}
+.yamm .nav.navbar-right .dropdown-menu {
+  left: auto;
+  right: 0;
+}
+.yamm .yamm-content {
+  padding: 20px 30px;
+  padding: 0 20px 20px 20px;
+  margin-bottom: 20px;
+}
+.yamm .dropdown.yamm-fw .dropdown-menu {
+  left: 0;
+  right: 0;
+}
+
+
+
+/* START OF - styles I added */
+/* ------------------------- */
+/* Full Width Dropdown Menu */
+
+ul.dropdown-menu-fw {
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+}
+ul.dropdown-menu-fw h4 {
+	color: #330072;
+	background: #ccc;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;	
+    padding: 2px 5px;
+}
+ul.dropdown-menu-fw .dropdown-header {
+	color: #ffff00;
+}
+ul.dropdown-menu-fw li.dropdown-header {
+	padding: 3px 1px;
+}
+ul.dropdown-menu-fw li {
+	padding: 1px 1px;
+	margin: 0 10px;
+}
+ul.dropdown-menu-fw li a {
+	display: block;
+	color: #fff;
+	padding: 3px 10px;	
+}
+ul.dropdown-menu-fw li.active, 
+ul.dropdown-menu-fw li.active:hover {
+	background: #357EBD;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ul.dropdown-menu-fw li:hover, 
+ul.dropdown-menu-fw li:focus {
+	background: #330072;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ul.dropdown-menu-fw a:hover {
+	text-decoration: none;
+}
+
+
+
+/*ul.dropdown-menu-fw li.dropdown-section-header:hover, 
+ul.dropdown-menu-fw li.dropdown-section-header:focus, 
+ul.dropdown-menu-fw li.dropdown-header:hover, 
+ul.dropdown-menu-fw li.dropdown-header:focus {
+	background: none;
+	cursor: default;
+}
+ul.dropdown-menu-fw li.dropdown-section-header {
+	padding: 3px 0px;
+}*/
+
+
+ul.dropdown-menu-fw li.dropdown-section-header {
+	color: #330072;
+	font-size: 125%;
+	font-weight: bold;
+	background: #ccc;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;	
+    padding: 2px 5px;	
+    padding: 0px 10px;
+    margin: 10px 0;
+    cursor: default;
+}
+
+ul.dropdown-menu-fw li.dropdown-section-header-link {
+	color: #330072;
+	font-size: 125%;
+	font-weight: bold;
+	background: #ccc;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;	
+    padding: 2px 5px;	
+    padding: 0px 10px;
+    margin: 10px 0;
+}
+ul.dropdown-menu-fw li.dropdown-section-header-link a {
+	padding: 0;
+}
+ul.dropdown-menu-fw li.dropdown-section-header-link:hover, 
+ul.dropdown-menu-fw li.dropdown-section-header-link:focus {
+	background: #330072;
+}
+
+ul.dropdown-menu-fw li.dropdown-section-header-link a {
+	color: #330072;
+}
+ul.dropdown-menu-fw li.dropdown-section-header-link a:hover {
+	color: #fff;
+}
+
+
+.dropdown-menu-fw .divider, 
+.dropdown-menu-fw .divider:hover {
+    background-color: #E5E5E5;
+    background-color: #333;
+    height: 1px;
+    margin: 5px 15px;
+    overflow: hidden;
+}

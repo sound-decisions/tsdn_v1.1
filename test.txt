@@ -1,0 +1,5 @@
+This is just a test file I'm using while I'm learning more about using Git.
+
+Making another change to see what happens.
+
+Trying Git GUI now.

@@ -1,0 +1,74 @@
+@charset "UTF-8";
+/*
+ * Bootstrap Image Gallery Demo CSS 3.0.0
+ * https://github.com/blueimp/Bootstrap-Image-Gallery
+ *
+ * Copyright 2013, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
+
+body {
+    padding-top: 60px;
+    /*background: #222;*/
+    color: #fff;
+}
+h1 {
+    /*font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;*/
+}
+a {
+    color: orange;
+}
+a:hover {
+    color: lightblue;
+    text-decoration: none;
+}
+.modal {
+	overflow: auto;
+	color: #333;
+}
+
+#links {
+	/*display: none;*/
+}
+
+div#links, div#obnoxus, div#maxim {
+	display: none;
+}
+img#gallery_1, img#gallery_2, img#gallery_3 {
+	cursor: pointer;;
+}
+/*p#gallery_1, p#gallery_2, p#gallery_3 {
+	cursor: pointer;;
+}*/
+
+.gallery-open-buttons {
+	margin: 20px 0;
+}
+
+.gallery-open-buttons p {
+	margin-top: 10px;
+	padding-top: 2px 5px;
+	text-align: center;
+	font-weight: bold;
+	border: 2px solid #330072;
+	background: #ccc;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+
+.modal-content {
+	background: #ccc;
+}
+.modal-header {
+	border-bottom: none;
+}
+.modal-footer {
+	border-top: none;
+}
+.modal-title {
+	color: #330072;
+}

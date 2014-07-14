@@ -1,0 +1,39 @@
+
+
+Create SQL for members DB Table
+9:47 am - 10:04 am	= 17 m
+
+Create Model
+10:05 am - 10:13 am	= 8 m
+
+Create Controller 
+10:13 am - 10:45 am	= 32 m
+
+Break
+10:45 am - 11:09 am
+
+Sign Up, Dashboard
+11:09 am - 12:17 pm	= 8 m
+
+Break 12:17 pm - 1:00 pm
+
+Sign In
+1:00 pm - 1:20 pm	= 20 m
+
+Break
+1:20 pm - 1:38 pm
+
+Sign In
+1:38 pm - 1:57 pm	= 19 m
+
+Break 
+1:57 pm - 2:32 pm
+
+Profile
+2:23 pm - 2:54 pm	= 31 m
+
+Break
+2:54 pm - 3:20 pm
+
+Header Links/Sign Out/Cookies
+3:20 pm - 4:23 pm	= 1 h 3 m
