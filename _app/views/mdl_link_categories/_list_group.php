@@ -21,7 +21,7 @@ foreach ($mdl_link_categories as $mdl_link_category) {
 	
 	// Create the links.		
 	$details_link = '<a href="' . site_url("mdl-link-categories/view/") . '/' . $mdl_link_category->id . '" class="btn btn-success btn-thin">Details</a>';
-	$edit_link = '<a href="' . site_url("mdl-link-categories/edit/") . '/' . $mdl_link_category->id . '" class="btn btn-warning btn-thin">Edit</a>';
+	$edit_link = '<a href="' . site_url("mdl-link-categories/edit/") . '/' . $mdl_link_category->id . '" class="btn btn-primary btn-thin">Edit</a>';
 	$delete_link = '<a href="' . site_url("mdl-link-categories/delete/") . '/' . $mdl_link_category->id . '" onclick="return confirm(\'Are you sure you want to delete this link category?  All links associtated with it will be deleted as well.\');" class="btn btn-danger btn-thin">Delete</a>';	
 	
 	echo '<li class="list-group-item thin ' . $background_color . ' clearfix">';

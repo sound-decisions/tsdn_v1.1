@@ -29,6 +29,7 @@ echo '<li class="dropdown yamm-fw' . (@$top_menu == 'Members Only' ? ' active' :
 							echo '<li class="divider"></li>' . chr(10);
 							//echo '<li class="dropdown-header">Movies</li>' . chr(10);
 							echo '<li ' . (@$dropdown_menu == 'Links Most Visited' ? 'class="active"' : '') . '><a href="' . site_url('mdl-links/most-visited') . '">Links Most Visited</a></li>' . chr(10);
+							echo '<li ' . (@$dropdown_menu == 'Featured Links' ? 'class="active"' : '') . '><a href="' . site_url('mdl-links/featured') . '">Featured Links</a></li>' . chr(10);
 							echo '<li ' . (@$dropdown_menu == 'Links By Category' ? 'class="active"' : '') . '><a href="' . site_url('mdl-links/by-category/0') . '">Links By Category</a></li>' . chr(10);
 							echo '<li ' . (@$dropdown_menu == 'Link Categories' ? 'class="active"' : '') . '><a href="' . site_url('mdl-link-categories') . '">Link Categories</a></li>' . chr(10);												
 							echo '<li class="divider"></li>' . chr(10);

@@ -148,7 +148,7 @@ class Mdl_notes extends CI_Controller {
 
 
 			// Set the title for the page.	
-			$page_data['top_menu'] = 'Notes';
+			$page_data['top_menu'] = 'Members Only';
 			$page_data['dropdown_menu'] = 'Add A Note';
 			$page_data['title'] = 'Add A Note';
 			$data['title'] = 'Add A Note';
@@ -256,9 +256,10 @@ class Mdl_notes extends CI_Controller {
 		if (!$this->form_validation->run()) {
 
 			// Set the title for the page.
+			$page_data['top_menu'] = 'Members Only';
 			$page_data['title'] = 'Edit Note';
 			// Set content for the page.		
-			$data['title'] = 'Edit Note';	
+			$data['title'] = 'Edit Note';
 			$data['note'] = $note;
 			$data['note_category_form_options'] = $a_note_category_form_options;
 
@@ -481,7 +482,7 @@ class Mdl_notes extends CI_Controller {
 		
 
 		// Set the title for the page.		
-		$page_data['top_menu'] = 'Notes';
+		$page_data['top_menu'] = 'Members Only';
 		$page_data['dropdown_menu'] = 'Notes By Category';
 		$page_data['title'] = 'Notes for:  ' . $category_name_for_title;
 		//$data['title'] = "Category: " . $category_name;	

@@ -56,6 +56,15 @@
 						echo form_textarea($textarea_attributes) . chr(10);
 					echo '</div>' . chr(10);
 
+					echo '<div class="checkbox">' . chr(10);
+						echo '<label class="control-label">' . chr(10);
+							$featured = (set_value('featured') == '' ? @$link->featured : set_value('featured'));
+							//$featured = 'yes';
+							echo '<input type="checkbox" id="featured" name="featured"' . (($featured == 'yes') ? " checked=\"checked\"" : '') . ' value="yes"><span class="text-bold ">Featured Link</span>' . chr(10);						
+						echo '</label>' . chr(10);
+					echo '</div>' . chr(10);
+
+
                     echo '<div class="form-group margin-top-20 margin-bottom-10">' . chr(10);
                         echo '<h5 class="text-color">Sign In/Login Information</h5>' . chr(10);
                     echo '</div>' . chr(10);

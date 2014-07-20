@@ -37,6 +37,7 @@ class Mdl_note_categories extends CI_Controller {
 
 
 		// Set the title for the page.
+		$page_data['top_menu'] = 'Members Only';
 		$page_data['title'] = 'Note Categories';
 		$data['title'] = 'Note Categories';	
 		//$data['mdl_note_categories'] = $a_mdl_note_categories;
@@ -126,7 +127,7 @@ class Mdl_note_categories extends CI_Controller {
 			
 			
 			// Set the title for the page.
-			$page_data['top_menu'] = 'Notes';
+			$page_data['top_menu'] = 'Members Only';
 			$page_data['dropdown_menu'] = 'Add A Note Category';
 			$page_data['title'] = 'Add A Note Category';
 			
@@ -232,7 +233,7 @@ class Mdl_note_categories extends CI_Controller {
 
 
 			// Set the title for the page.
-			$page_data['top_menu'] = 'Admin Menu';
+			$page_data['top_menu'] = 'Members Only';
 			$page_data['dropdown_menu'] = 'Edit Note Category';
 			$page_data['title'] = 'Edit Note Category';
 			

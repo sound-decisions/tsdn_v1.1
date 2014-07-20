@@ -162,6 +162,7 @@ $route['mdl-link-categories'] = 'mdl_link_categories';
 
 $route['mdl-links/update-visit-count/(:any)'] = 'mdl_links/update_visit_count/$1';
 
+$route['mdl-links/featured'] = 'mdl_links/links_featured';
 $route['mdl-links/most-visited'] = 'mdl_links/links_most_visited';
 $route['mdl-links/by-category/(:any)'] = 'mdl_links/links_by_category/$1';
 $route['mdl-links/list-gbc'] = 'mdl_links/list_grouped_by_category';

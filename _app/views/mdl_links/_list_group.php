@@ -43,7 +43,7 @@ foreach ($links as $link) {
 					// Display the link.
 					echo '<a href="' . $link['url'] . '" target="_blank" id="' . $link['id'] . '" class="link_item">';
 						echo $link['name'];
-						echo '<span class="padding-left-10 padding-right-10">(' . $link['visit_count'] . ')</span>';
+						echo '<span title="Visit Count" class="padding-left-10 padding-right-10">(' . $link['visit_count'] . ')</span>';
 					echo '</a>';
 					
 					// Display buttons for smart phones.

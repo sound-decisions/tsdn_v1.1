@@ -67,15 +67,16 @@ class Recipe_categories extends CI_Controller {
 		}
 
 		// Set the title for the page.
+		$page_data['top_menu'] = 'Members Only';
 		$page_data['title'] = 'Recipe Category';
 		// Set content for the page.
-		$data['title'] = 'Recipe Category';			
-		$data['recipe_category'] = $recipe_category;	
+		$data['title'] = 'Recipe Category';
+		$data['recipe_category'] = $recipe_category;
 
 		$this->load->view('templates/top', $page_data);
 		$this->load->view('templates/header', $page_data);
 		$this->load->view('recipe_categories/view', $data);
-		$this->load->view('templates/footer');			
+		$this->load->view('templates/footer');
 
 	} // end of - function view
 

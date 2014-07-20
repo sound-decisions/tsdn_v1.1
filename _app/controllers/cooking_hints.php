@@ -31,7 +31,7 @@ class Cooking_hints extends CI_Controller {
 
 
 		// Set the title for the page.
-		$page_data['top_menu'] = 'Recipes';
+		$page_data['top_menu'] = 'Members Only';
 		$page_data['dropdown_menu'] = 'Cooking Hints';
 		$page_data['title'] = 'Cooking Hints';
 		

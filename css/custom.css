@@ -230,7 +230,9 @@ p.required {
 	color: #330072;
 }
 
-
+.text-bold {
+	font-weight: bold;
+}
 
 
 ul.dropdown-menu.no-padding {
@@ -1202,7 +1204,8 @@ footer p {
 
 
 .slide-content {
-	margin: 0px 20px;
+	margin-bottom: 20px;
+	min-height: 350px;
 }
 .slide-content p {
 	margin-bottom: 10px;

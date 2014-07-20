@@ -78,7 +78,7 @@ class Mdl_links extends CI_Controller {
 		}
 
 		// Set the title for the page.
-		$page_data['top_menu'] = 'Links';
+		$page_data['top_menu'] = 'Members Only';
 		//$page_data['dropdown_menu'] = 'Links';
 		$page_data['title'] = 'Link';
 		
@@ -158,7 +158,7 @@ class Mdl_links extends CI_Controller {
 			
 
 			// Set the title for the page.	
-			$page_data['top_menu'] = 'Links';
+			$page_data['top_menu'] = 'Members Only';
 			$page_data['dropdown_menu'] = 'Add A Link';
 			$page_data['title'] = 'Add A Link';
 			$data['title'] = 'Add A Link';
@@ -204,7 +204,9 @@ class Mdl_links extends CI_Controller {
 			$link->visit_count = $visit_count;
 			$link->favorite = $favorite;
 			$link->display = $display;
-			$link->featured = $featured;
+			//$link->featured = $featured;
+			//$link->featured = ( isset($this->input->post('featured')) ) ? 'yes' : 'no';
+			$link->featured = ($this->input->post('featured') == 'yes') ? 'yes' : 'no';
 			$link->status = $status;
 			$link->created_at = $datetime;
 			$link->updated_at = $datetime;
@@ -285,6 +287,7 @@ class Mdl_links extends CI_Controller {
 		if (!$this->form_validation->run()) {
 
 			// Set the title for the page.
+			$page_data['top_menu'] = 'Members Only';
 			$page_data['title'] = 'Edit Link';
 			// Set content for the page.		
 			$data['title'] = 'Edit Link';
@@ -336,6 +339,7 @@ class Mdl_links extends CI_Controller {
 			$link->encrypted_password = $encrypted_password;
 			//$link->display = $link->display;
 			//$link->featured = $link->featured;
+			$link->featured = ($this->input->post('featured') == 'yes') ? 'yes' : 'no';
 			//$link->status = $link->status;
 			//$link->created_at = $link->created_at;
 			$link->updated_at = $datetime;
@@ -513,7 +517,7 @@ class Mdl_links extends CI_Controller {
 		
 
 		// Set the title for the page.
-		$page_data['top_menu'] = 'Links';
+		$page_data['top_menu'] = 'Members Only';
 		$page_data['dropdown_menu'] = "Links By Category";
 		$page_data['title'] = $category_name_for_title . ' Links';
 		
@@ -567,7 +571,7 @@ class Mdl_links extends CI_Controller {
 
 
 		// Set the title for the page.
-		$page_data['top_menu'] = 'Links';
+		$page_data['top_menu'] = 'Admin Menu';
 		$page_data['dropdown_menu'] = "Grouped By Category";
 		$page_data['title'] = 'Links';
 		
@@ -611,7 +615,7 @@ class Mdl_links extends CI_Controller {
 
 
 		// Set the title for the page.
-		$page_data['top_menu'] = 'Links';
+		$page_data['top_menu'] = 'Members Only';
 		$page_data['dropdown_menu'] = "Links Most Visited";
 		$page_data['title'] = 'Most Visited Links';
 		
@@ -627,6 +631,55 @@ class Mdl_links extends CI_Controller {
 		$this->load->view('more_js/mdl_links');
 
 	} // end of - function links_most_visited
+
+
+
+
+
+	/**
+	 * List records.
+	 */
+	public function links_featured() {
+
+		// Make sure that a member is signed in.
+		$this->accesschecks->check_if_member_signed_in();
+
+		// Load helers/libraries/models.
+		$this->load->helper('date');
+
+		$limit = 50;
+		$a_mdl_links = array();
+		//$a_mdl_links = $this->mdl_links_model->get_mdl_links($limit);
+		$a_mdl_links = $this->mdl_links_model->get_featured_links($limit);
+		
+		// Get the data for the my links list.
+		$data_for_list['links'] = $a_mdl_links;
+
+		// Create the my links list view code.
+		$links_view = $this->load->view('mdl_links/_list_group', $data_for_list, true);		
+
+
+		// Set the title for the page.
+		$page_data['top_menu'] = 'Members Only';
+		$page_data['dropdown_menu'] = "Featured Links";
+		$page_data['title'] = 'Featured Links';
+		
+		$data['title'] = 'Featured Links';	
+		//$data['mdl_links'] = $a_mdl_links;
+		$data['mdl_links_view'] = $links_view;
+
+		$this->load->view('templates/top', $page_data);
+		$this->load->view('templates/header', $page_data);
+		$this->load->view('templates/advertising');
+		$this->load->view('mdl_links/index', $data);
+		$this->load->view('templates/footer');
+		$this->load->view('more_js/mdl_links');
+
+	} // end of - function links_featured
+
+
+
+
 
 
 

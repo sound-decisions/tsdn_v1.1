@@ -38,6 +38,7 @@ class Mdl_link_categories extends CI_Controller {
 
 
 		// Set the title for the page.
+		$page_data['top_menu'] = 'Members Only';
 		$page_data['title'] = 'Link Categories';
 		$data['title'] = 'Link Categories';	
 		//$data['mdl_link_categories'] = $a_mdl_link_categories;
@@ -78,6 +79,7 @@ class Mdl_link_categories extends CI_Controller {
 
 
 		// Set the title for the page.
+		$page_data['top_menu'] = 'Members Only';
 		$page_data['title'] = 'Link Category';
 		// Set content for the page.
 		$data['title'] = 'Link Category';
@@ -144,7 +146,7 @@ class Mdl_link_categories extends CI_Controller {
 			} // end of - foreach
 
 			// Set the title for the page.
-			$page_data['top_menu'] = 'Links';
+			$page_data['top_menu'] = 'Members Only';
 			$page_data['dropdown_menu'] = 'Add A Link Category';
 			$page_data['title'] = 'Add A Link Category';
 			$data['title'] = 'Add A Link Category';
@@ -253,9 +255,10 @@ class Mdl_link_categories extends CI_Controller {
 
 
 			// Set the title for the page.
+			$page_data['top_menu'] = 'Members Only';
 			$page_data['title'] = 'Edit Link Category';
 			// Set content for the page.		
-			$data['title'] = 'Edit Link Category';	
+			$data['title'] = 'Edit Link Category';
 			$data['link_category'] = $mdl_link_category;
 			$data['link_categories_view'] = $link_categories_view;
 			$data['link_category_form_options'] = $a_link_category_form_options;

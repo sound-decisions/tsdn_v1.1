@@ -40,43 +40,19 @@
 </div><!-- end of - jumbotron -->
 
 
-<div class="container">
-	<div class="row">
-		<div class="col col-md-8">
-			
-			<?php
-			// Display the Site Sections.
-			require_once '_site_sections_v_6.php';
-			?>					
-			
-		</div><!-- end of - col -->
-		<div class="col col-md-4">
-			
-			<?php
-			// Display the Home Page carousel.
-			require_once '_home_carousel_images_on_top.php';
-			?>
-			
-		</div><!-- end of - col -->		
-	</div><!-- end of - row -->		
-</div><!-- end of - container -->			
-
-
-
 
 
 <?php
 // Display the Home Page carousel.
-//require_once '_home_carousel_images_on_top.php';
+require_once '_home_carousel_images_on_left.php';
 
 //echo '<div class="carousel-underline-bottom visible-xs visible-sm">&nbsp;</div>' . chr(10);
-//echo '<div class="carousel-underline-top visible-xs visible-sm">&nbsp;</div>' . chr(10);
-//echo '<div class="carousel-underline-top hidden-xs hidden-sm">&nbsp;</div>' . chr(10);
+echo '<div class="carousel-underline-top visible-xs visible-sm">&nbsp;</div>' . chr(10);
+echo '<div class="carousel-underline-top hidden-xs hidden-sm">&nbsp;</div>' . chr(10);
 
 
 //require_once '_site_sections_v_1.php';
 //require_once '_site_sections_v_2.php';
 //require_once '_site_sections_v_3.php';
-//require_once '_site_sections_v_4.php';
-//require_once '_site_sections_v_5.php';
+require_once '_site_sections_v_4.php';
 ?>

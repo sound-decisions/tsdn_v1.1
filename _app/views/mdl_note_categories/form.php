@@ -65,7 +65,7 @@
 		                //echo form_button($cancel_attributes, '', $cancel_js) . chr(10);
 					echo '</div>' . chr(10);
 		
-					echo form_close() . chr(10);	
+					echo form_close() . chr(10);
 					
 					
 				echo '</div>' . chr(10); // end of - panel-body

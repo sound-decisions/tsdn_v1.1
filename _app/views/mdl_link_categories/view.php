@@ -53,7 +53,7 @@
 								// Item buttons normal.
 								echo '<div class="pull-left padding-right-20 margin-top-2 btn-group hidden-xs">' . chr(10);																		
 									echo '<a href="' . site_url("mdl-links/delete/") . '/' . $link['id'] . '" onclick="return confirm(\'Are you sure you want to delete this link?\');" class="btn btn-danger btn-thin">Delete</a>' . chr(10);
-									echo '<a href="' . site_url("mdl-links/edit/") . '/' . $link['id'] . '" class="btn btn-warning btn-thin">Edit</a>' . chr(10);
+									echo '<a href="' . site_url("mdl-links/edit/") . '/' . $link['id'] . '" class="btn btn-primary btn-thin">Edit</a>' . chr(10);
 									echo '<a href="' . site_url("mdl-links/view/") . '/' . $link['id'] . '" class="btn btn-success btn-thin">Details</a>' . chr(10);
 								echo '</div>' . chr(10);
 
@@ -80,7 +80,7 @@
 		                	echo '</div>' . chr(10);
 		                	echo '<div class="pull-right margin-top-2 btn-group">' . chr(10);
 								if ($this->session->userdata('member_id') == $link_category->member_id) {		                    					                    
-				                    echo '<a href="' . site_url("mdl-link-categories/edit/") . '/' . $link_category->id . '" class="btn btn-warning btn-thin">Edit</a>' . chr(10);
+				                    echo '<a href="' . site_url("mdl-link-categories/edit/") . '/' . $link_category->id . '" class="btn btn-primary btn-thin">Edit</a>' . chr(10);
 				                    echo '<a href="' . site_url("mdl-link-categories/delete/") . '/' . $link_category->id . '" onclick="return confirm(\'Are you sure you want to delete this link category?\n\nAll links associated with the category will be deleted as well.\');" class="btn btn-danger btn-thin">Delete</a>' . chr(10);									
 				            	}
 			             	echo '</div>' . chr(10);

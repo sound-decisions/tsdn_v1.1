@@ -245,6 +245,31 @@ class Mdl_links_model extends MY_Model {
 	
 	
 	/**
+ 	 * Get links from the DB and return them as an array.
+ 	 * @param int id
+	 */
+	public function get_featured_links($limit = 100) {
+
+		$member_id = $this->session->userdata('member_id');
+
+		$this->db->from('mdl_links');
+		$this->db->where('member_id', $member_id);
+		$this->db->where('display', 'yes');
+		$this->db->where('featured', 'yes');
+		$this->db->order_by('name asc');
+		$this->db->limit($limit);
+		$query = $this->db->get();
+		
+		return $query->result_array();
+
+	} // end of - function get_featured_links		
+	
+	
+	
+	
+	
+	
+	/**
 	 * Delete a record.
 	 * @param int $id
 	 */

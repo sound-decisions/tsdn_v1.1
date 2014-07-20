@@ -74,7 +74,7 @@ class Recipes extends CI_Controller {
 		}
 
 		// Set the title for the page.
-		$page_data['top_menu'] = 'Recipes';
+		$page_data['top_menu'] = 'Members Only';
 		$page_data['title'] = 'Recipe';
 		
 		// Set content for the page.
@@ -165,7 +165,7 @@ class Recipes extends CI_Controller {
 			
 
 			// Set the title for the page.	
-			$page_data['top_menu'] = 'Recipes';
+			$page_data['top_menu'] = 'Members Only';
 			$page_data['dropdown_menu'] = "Add A Recipe";
 			$page_data['title'] = 'Add A Recipe';
 			
@@ -277,7 +277,7 @@ class Recipes extends CI_Controller {
 		if (!$this->form_validation->run()) {
 
 			// Set the title for the page.
-			$page_data['top_menu'] = 'Recipes';
+			$page_data['top_menu'] = 'Members Only';
 			$page_data['title'] = 'Edit Recipe';
 			
 			// Set content for the page.		
@@ -407,7 +407,7 @@ class Recipes extends CI_Controller {
 
 
 		// Set the title for the page.
-		$page_data['top_menu'] = 'Recipes';
+		$page_data['top_menu'] = 'Members Only';
 		$page_data['dropdown_menu'] = "My Recipes";
 		$page_data['title'] = 'My Recipes';
 		
@@ -498,7 +498,7 @@ class Recipes extends CI_Controller {
 		
 
 		// Set the title for the page.
-		$page_data['top_menu'] = 'Recipes';
+		$page_data['top_menu'] = 'Members Only';
 		$page_data['dropdown_menu'] = "By Category";
 		if ($category_name != '') {
 			$page_data['title'] = $category_name . ' Recipes';
